@@ -219,10 +219,18 @@ This output verifies all active indexes on the collection after tuning.
 
 This screenshot validates that the text index works correctly with practical search terms.
 
-## Reflection
-1. The document model fit e-commerce workloads well by combining embedded order items with referenced master data.
-2. Aggregation pipelines provided business insights directly from operational collections.
-3. Performance validation using explain("executionStats") was essential to prove index impact instead of assuming optimization.
+## Reflection My undersanding 
+From this practical, I learned that good database design is not just about storing data, but about how efficiently we can read and use it. Before creating any collection, it's important to think about how the data will be used, not just how it will be stored. This "query-first" approach helps make better design decisions in MongoDB.
+
+I also understood the difference between embedding and referencing. Embedding is useful when related data always stays together, like order items inside an order. Referencing works better when the same data is used in many places, like products in different orders. Choosing the wrong approach can cause problems too much embedding makes documents large and slow, while too much referencing leads to many extra database queries.
+
+Another important concept I learned is aggregation. Unlike a simple find() query, aggregation allows us to process and analyze data in more powerful ways. Using stages like $match, $group, and $lookup, we can answer real-world questions such as total sales or top products in a single query.
+
+I also learned about indexing. Without indexes, MongoDB has to scan every document, which is slow. With proper indexes, it can quickly find the needed data. I learned that the order of fields in an index matters, and following the ESR rule (Equality, Sort, Range) helps improve performance.
+
+Finally, using explain("executionStats") showed me how to check if a query is efficient. Instead of assuming, we can see exactly how MongoDB runs the query. The best case is when the number of documents examined matches the number returned, meaning no extra work was done. This taught me the importance of always checking performance carefully.
+
+
 
 ## Conclusion
 In this practical, we designed a MongoDB database for an e-commerce system using a query-first approach. We created four main collections: users, categories, products, and orders. Some data was embedded (like order items inside orders) because it is always used together, while other data (like products) was referenced to avoid duplication.
