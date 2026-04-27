@@ -219,7 +219,7 @@ This output verifies all active indexes on the collection after tuning.
 
 This screenshot validates that the text index works correctly with practical search terms.
 
-## Reflection My undersanding 
+## Reflection
 From this practical, I learned that good database design is not just about storing data, but about how efficiently we can read and use it. Before creating any collection, it's important to think about how the data will be used, not just how it will be stored. This "query-first" approach helps make better design decisions in MongoDB.
 
 I also understood the difference between embedding and referencing. Embedding is useful when related data always stays together, like order items inside an order. Referencing works better when the same data is used in many places, like products in different orders. Choosing the wrong approach can cause problems too much embedding makes documents large and slow, while too much referencing leads to many extra database queries.
