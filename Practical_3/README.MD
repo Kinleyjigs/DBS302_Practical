@@ -37,7 +37,7 @@ Created collections: users, categories, products, orders.
 
 This screenshot shows the commands used to create the required MongoDB collections for the e-commerce schema.
 
-<img src="screenshots/ecommerce database.png" alt="Database created" width="60%"/>
+![alt text](<screenshots/ecommerce database.png>)
 
 This output confirms that the `ecommerce` database is active and ready for data insertion.
 
@@ -49,18 +49,18 @@ Inserted two users: Tashi Dorji and Sonam Choden.
 
 This screenshot shows the insertMany command used to add user documents with profile and address details.
 
-<img src="screenshots/inserted user data.png" alt="Inserted users output" width="60%"/>
+![alt text](<screenshots/inserted user data.png>)
 
 This output verifies that both user records were successfully inserted into the users collection.
 
 ### 2.2 Insert Categories
 Inserted Electronics and Accessories categories using reusable ObjectId variables.
 
-<img src="screenshots/Insert Categories.png" alt="Insert categories command" width="60%"/>
+![alt text](<screenshots/Insert Categories.png>)
 
 This screenshot shows category insertion with predefined ObjectId values for later product references.
 
-<img src="screenshots/inserted categories.png" alt="Inserted categories output" width="60%"/>
+![alt text](<screenshots/inserted categories.png>)
 
 This confirms that Electronics and Accessories categories were inserted correctly.
 
@@ -71,7 +71,7 @@ Inserted three products with variable attributes via the Attribute Pattern.
 
 This screenshot captures product insertion using flexible `attributes` fields for different product properties.
 
-<img src="screenshots/inserted product.png" alt="Inserted products output" width="60%"/>
+![alt text](<screenshots/inserted product.png>)
 
 This output confirms all sample products were added with category links and pricing details.
 
@@ -83,7 +83,7 @@ Inserted two orders with embedded order items and historical pricing stored in e
 
 This screenshot shows order creation with embedded items, quantities, line totals, and payment details.
 
-<img src="screenshots/inserted orders.png" alt="Inserted orders output" width="60%"/>
+![alt text](<screenshots/inserted orders.png>)
 
 This output verifies order documents were inserted successfully for both users.
 
