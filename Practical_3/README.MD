@@ -219,20 +219,6 @@ This output verifies all active indexes on the collection after tuning.
 
 This screenshot validates that the text index works correctly with practical search terms.
 
-## Requirements-to-Evidence Mapping
-| Practical Requirement | Evidence in Report |
-|---|---|
-| Create ecommerce database and collections | Create collections, ecommerce database screenshots |
-| Insert realistic sample users/products/orders/categories | Insert and inserted output screenshots for all 4 collections |
-| Daily sales analytics | Query 1 screenshot |
-| Top products by revenue | Query 2 screenshot |
-| Average order value per customer | Query 3 screenshot |
-| Product + category enrichment with lookup | Query 4 screenshot |
-| Index creation for key patterns | Index 1, 2, 3, 4 screenshots |
-| Text search test | Query 5 and Part F screenshots |
-| Explain before/after optimization | Part A, Part C, Part D screenshots |
-| Index verification | Part E screenshot |
-
 ## Reflection
 1. The document model fit e-commerce workloads well by combining embedded order items with referenced master data.
 2. Aggregation pipelines provided business insights directly from operational collections.
