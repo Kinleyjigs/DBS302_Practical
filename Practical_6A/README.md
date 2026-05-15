@@ -135,6 +135,11 @@ Here i have commented out the TLS configuration lines in redis.conf because Redi
 *Figure 9: Admin_TLS_Session_Test
 The Admin user was successfully connected and was verified using the ACL WHOAMI command. A test key (session:user456) was also set and retrieved without issues, confirming that Redis ACL permissions and session key access are working properly after the TLS configuration.*
 
+### Simple Application Code Demo for Redis (Python)
+
+
+
+
 ## Reflection
 
 From this practical i have learned how the database security works in real situation. I learned how to use the Redis ACL to create users with different roles and restrict both commands and key access, which showed how flexible and detailed access control can be.
