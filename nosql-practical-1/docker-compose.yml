@@ -1,7 +1,8 @@
 version: "3.9"
+
 services:
   redis:
-    image: redis:7.2
+    image: redis:6.2
     container_name: redis_social
     ports:
       - "6379:6379"
